@@ -1,1 +1,0 @@
-﻿Get-DnsClientServerAddress | Select-Object –ExpandProperty ServerAddresses | sort | Get-Unique | Select-String "10."
