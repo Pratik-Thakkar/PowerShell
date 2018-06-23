@@ -1,4 +1,4 @@
-﻿#Invoke-Command -ComputerName 21f2cdch3dms01 -ScriptBlock {
+#Invoke-Command -ComputerName '' -ScriptBlock {
 If (Test-Path X:) {
     $tenpercent=[math]::Truncate(((Get-WmiObject Win32_LogicalDisk -ComputerName localhost -Filter "DeviceID='C:'" | Select-Object Size).Size * 0.1) / 1024000)
     vssadmin Add ShadowStorage /For=X: /On=X: /MaxSize=$tenpercent"MB"
