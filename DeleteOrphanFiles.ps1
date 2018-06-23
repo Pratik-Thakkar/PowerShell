@@ -1,4 +1,4 @@
-$data = import-csv "D:\OrphanFiles_6d83f.txt"
+$data = import-csv "D:\OrphanFiles_sample.txt"
 write-output $data.count 
 foreach ($line in $data)
 {	
